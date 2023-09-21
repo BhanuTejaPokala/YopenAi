@@ -1,0 +1,67 @@
+<header style="background-color: rgb(0 79 154); position: relative;">
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-blue">
+    <div class="container">
+      <!-- Logo on the left -->
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img style="width: 90%; height: 50px;" src="https://lp.yokogawa.com/heat-treat/en/assets/images/logo.png">
+      </a>
+
+      <!-- Top-right links -->
+      <ul class="navbar-nav ml-auto" style="position: absolute; right: 10px; top: 10px; margin-bottom: 20px;">
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/news-events']">News & Events</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/about-us']">About Us</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/careers']">Careers</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['link-active']">
+          <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/global']">Global</a>
+        </li>
+
+        <!-- Search input and button -->
+        <li class="nav-item">
+          <form id="form" role="search" class="custom-search-form form-inline" action="action_page.php" style="margin:auto;max-width:300px">
+            <input type="search" id="query" name="q" class="form-control" placeholder="Search..." aria-label="Search through site content">
+            <button class="btn btn-light" type="submit" style="background-color: mediumblue;"><i class="fa fa-search"></i></button>
+          </form>
+        </li>
+      </ul>
+
+      
+      <!-- Bottom links -->
+      <div style="background-color: rgb(0 79 154);">
+        <div class="container">
+          <ul class="custom-navbar-nav" style="position: absolute; right: 50px; top: 50px; margin-bottom: 20px;">
+            <li class="nav-item"[routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/industries']">Industries</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/solutions']">Solutions</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/products-services']">Products & Services</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/library']">Library</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/featured-topics']">Featured Topics</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/support']">Support</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" style="color: antiquewhite;" [routerLink]="['/contact-us']">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+</header>
